@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"> 
+
+<!--
+	reading the source, eh?
+	loser...
+-->
+
+<html>
+<head>
+<title>[ hfd . interim ]</title>
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="no">
+
+<style type="text/css">
+<!--
+	/* reset inside here */
+	@import "hfd.css";
+-->
+</style>
+
+<script type="text/javascript" src="drag.js"></script>
+<script type="text/javascript" src="HfdScroll.js"></script>
+<script type="text/javascript" src="ypSimpleScrollC.js"></script>
+<script type="text/javascript">
+
+var oScrollbar, oScrollPane;
+
+if (document.all || document.getElementById) 
+	oScrollPane	= new ypSimpleScroll("hfd", 20, 57, 280, 190, 10);
+
+function init()
+{
+	oScrollbar = HfdScroll_create('scrollbar');
+	if (oScrollbar)
+	{
+		oScrollbar.report = adjustPane;
+		oScrollPane.load();
+	};
+};
+
+function adjustPane(percent) {
+	oScrollPane.jumpTo(0, Math.round(percent / 100 * oScrollPane.scrollH));
+};
+
+</script>
+</head>
+
+<body onload="init();">
+
+<div id="hfdContainer">
+	<div id="hfdContent">
+
+		<!-- nando! - copy from here .... -->
+		<div class="entry">
+			<div class="body">Finished the scroller finally. Didn't have all the features I wanted, but finally just got tired of messing with it. On to other projects</div>
+			<div class="date">8.19.2001<br />2:34am</div>
+			<br class="clear" />
+		</div>
+		<!-- ... to here to make changes -->
+
+		<div class="entry">
+			<div class="body">Finished the scroller finally. Didn't have all the features I wanted, but finally just got tired of messing with it. On to other projects</div>
+			<div class="date">8.19.2001<br />2:34am</div>
+			<br class="clear" />
+		</div>
+		<div class="entry">
+			<div class="body">whoa - php and mySQL really are pretty easy. Never used them before, but not bad at all.</div>
+			<div class="date">8.23.2001<br />3:45am</div>
+			<br class="clear" />
+		</div>
+		<div class="entry">
+			<div class="body">posting splash to new server at index2.html today. blah blah blah. after that, gotta update the graphic and then we be done... except still need admin.</div>
+			<div class="date">8.24.2001<br />2:04am</div>
+			<br class="clear" />
+		</div>
+		<div class="entry">
+			<div class="body">posting splash to new server at index2.html today. blah blah blah. after that, gotta update the graphic and then we be done... except still need admin.</div>
+			<div class="date">8.24.2001<br />2:04am</div>
+			<br class="clear" />
+		</div>
+		<div class="entry">
+			<div class="body">posting splash to new server at index2.html today. blah blah blah. after that, gotta update the graphic and then we be done... except still need admin.</div>
+			<div class="date">8.24.2001<br />2:04am</div>
+			<br class="clear" />
+		</div>
+	</div>
+</div>
+
+<img src="girl_03.jpg" />
+
+<div id="scrollbar" class="hfdScroll" style="height:193px;">
+	<img class="hfdScroll-extUp" style="top:10px; clip:rect(auto auto 1px auto);" src="ext.gif" />
+	<img class="hfdScroll-extDn" style="top:-269px; clip:rect(301px auto auto auto)" src="ext.gif" />
+	<img class="hfdScroll-thumb" style="top:11px;" src="thumb.gif" /> 
+	<img class="hfdScroll-btnUp" style="top:0px;" src="btnUp.gif" />
+	<img class="hfdScroll-btnDn" style="top:33px;" src="btnDn.gif" />
+</div>
+
+</body>
+</html>
+
