@@ -17,6 +17,10 @@ body {
 	font-family:verdana, arial, sans-serif;
 }
 
+a {
+	color:#716846;
+}
+
 .entry .date {
 	text-align:right;
 }
