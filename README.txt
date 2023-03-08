@@ -1,4 +1,4 @@
 A custom scroller implemented for an old version of hungryfordesign.com.
 
-Demo: http://aboodman.github.com/hfdscroll/
+Demo: http://aboodman.github.io/hfdscroll/
 
